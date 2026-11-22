@@ -1,0 +1,98 @@
+:root {
+  --bg: #100d1b;
+  --panel: #171b35;
+  --text: #f7f9ff;
+  --muted: #c7cbe4;
+  --pink: #9cc8ff;
+  --lav: #b7a8ff;
+  --line: #c8ddff22;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 76% 16%, #789fff2c, transparent 34%),
+    radial-gradient(ellipse at 18% 100%, #9678e717, transparent 30%),
+    var(--bg);
+}
+
+.mark {
+  background: linear-gradient(135deg, #9fcfff, #9f97f4);
+  color: #fff;
+  box-shadow: 0 6px 18px #91b8ff28;
+}
+
+.top-cta {
+  border-color: #b9d7ff66;
+  color: #edf5ff;
+  background: #8bbaff0d;
+}
+
+.topbar nav a:hover,
+.footer > a:hover {
+  color: #b9d8ff;
+}
+
+.primary {
+  color: #172144;
+  background: linear-gradient(120deg, #e5f2ff 0%, #aacdfd 48%, #9a92ef 100%);
+  box-shadow: 0 10px 30px #88b6ff2c;
+}
+
+.primary:hover {
+  background: linear-gradient(120deg, #f3f9ff 0%, #bedbff 48%, #aaa1fa 100%);
+  box-shadow: 0 12px 34px #9abfff45;
+}
+
+.ghost {
+  border-color: #b9d7ff55;
+  color: #edf4ff;
+}
+
+.ghost:hover {
+  background: #9cc8ff14;
+  border-color: #b9d7ff99;
+}
+
+.eyebrow i,
+.pulse {
+  background: #a8e8f5;
+  box-shadow: 0 0 10px #a8e8f5;
+}
+
+.spark,
+.ticker b {
+  color: #b6caff;
+}
+
+.link-card {
+  background: linear-gradient(135deg, #1a1d39, #17162c);
+  border-color: #c8dcff23;
+}
+
+.link-card:hover {
+  border-color: #a8cdff8f;
+  box-shadow: 0 8px 25px #89b8ff12;
+}
+
+.card-icon {
+  background: #9dc7ff1c;
+  color: #b8d4ff;
+}
+
+.contact {
+  border-color: #b7d5ff3c;
+  background:
+    radial-gradient(ellipse at 90% 45%, #84b3ff24, transparent 36%),
+    #191a32;
+}
+
+.contact-star {
+  color: #bad5ff;
+  border-color: #b8d7ff55;
+}
+
+.hero h1 em,
+.section-head h2 em,
+.contact h2 em {
+  background-image: linear-gradient(90deg, #c4e2ff, #b6a6ff);
+}
