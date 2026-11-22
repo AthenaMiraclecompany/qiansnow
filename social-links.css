@@ -1,0 +1,86 @@
+.links-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 7% 12%, #86bdff1c, transparent 19%),
+    radial-gradient(circle at 92% 84%, #b69aff1a, transparent 24%),
+    #ffffff04;
+}
+
+.links-section::before,
+.links-section::after {
+  position: absolute;
+  color: #bfdaff;
+  font-size: 1.15rem;
+  letter-spacing: 2.8rem;
+  opacity: .2;
+  pointer-events: none;
+}
+
+.links-section::before {
+  content: "✦  ·  ✧  ·  ✦";
+  top: 4.6rem;
+  right: 4%;
+}
+
+.links-section::after {
+  content: "✧  ·  ✦  ·  ✧";
+  bottom: 4rem;
+  left: 4%;
+}
+
+.links-section .wrap,
+.links-section .cards {
+  position: relative;
+  z-index: 1;
+}
+
+.link-card {
+  --accent: #aabfff;
+  --tint: #9ebeff15;
+  position: relative;
+  overflow: hidden;
+  border-color: color-mix(in srgb, var(--accent) 36%, transparent);
+  background:
+    linear-gradient(115deg, var(--tint), transparent 56%),
+    linear-gradient(135deg, #1a1d39, #17162c);
+}
+
+.link-card::after {
+  content: "";
+  position: absolute;
+  width: 8.5rem;
+  height: 8.5rem;
+  right: -4.5rem;
+  top: -5.5rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent), transparent 68%);
+  opacity: .16;
+  pointer-events: none;
+}
+
+.link-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 70%, transparent);
+  box-shadow: 0 10px 28px var(--tint);
+}
+
+.link-card:hover::after {
+  opacity: .3;
+}
+
+.link-card .card-icon {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.twitch-card { --accent: #b89cff; --tint: #aa8cff24; }
+.youtube-card { --accent: #8dccff; --tint: #7cbaff22; }
+.discord-card { --accent: #c4a8ff; --tint: #b695ff20; }
+.facebook-card { --accent: #94c4ff; --tint: #79b8ff20; }
+
+.facebook-card .card-icon {
+  font-family: Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.45rem;
+}
